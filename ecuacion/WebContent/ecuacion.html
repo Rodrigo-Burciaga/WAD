@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" style="margin-bottom: 0;">
+  <div class="container-fluid"  >
+    <div class="navbar-header">
+      <div class="navbar-brand">Función Cuadrática</div>
+    </div>
+    <div class="navbar-form ">
+      <div class="form-group fuente">
+        <input type="number" min="1" class="form-control" required> X<sup>2</sup> + 
+		<input type="number" class="form-control" > X + 
+		<input type="number" class="form-control" > = 0
+		
+      </div>
+      <button type="button" onclick="validate()" class="btn btn-success btn-md"><span class="glyphicon glyphicon-refresh"></span> Actualizar Gráfica</button>
+      <span id="alerta" class="alerta"></span>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid ">
+<!--   <canvas id="myChart" width="70%"></canvas>-->
+</div>
+
+
+
+
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/Chart.js"></script>
+<script src="scripts/grafica.js"></script> 
+<script src="scripts/ecuacion.js"></script>
+</body>
+</html>
