@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Super Cómputo Hiper Mega Red</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"> 
+<style>
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding-left: 30px;
+  width: auto;
+}
+.jumbotron {
+      margin-bottom: 0;
+    }
+   
+</style>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Super Cómputo Hiper Mega Red</h1>      
+    <p>Tienda Online </p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logoescom.png" /></a>
+    </div>
+    <form class="navbar-form navbar-right">
+      <button type="button" class="btn btn-success btn-lg" onclick="carrito_update()"> <span class="glyphicon glyphicon-shopping-cart"></span> Carrito</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container " id="contenedor1">    
+  <div class="row" >
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">MINI DRON PARROT NEGRO-BLANCO</div>
+        <div class="panel-body"><img src="images/dron.jpg" class="img-responsive" style="width:100%" alt="Dron"></div>
+        <div class="panel-footer text-center">
+        <span id="price1">$ 3,200.00</span>
+        <button type="button" class="btn btn-info" id="1" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger text-center">
+        <div class="panel-heading">SAMSUNG -GALAXY -S7</div>
+        <div class="panel-body"><img src="images/s7.jpg" class="img-responsive" style="width:95%" alt="S7"></div>
+        <div class="panel-footer text-center" >
+        <span id="price2">$ 17,999.00</span>
+        <button type="button" class="btn btn-info" id="2" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading text-center">BOSE -BOCINA BLUETOOTH SOUNDLINK III</div>
+        <div class="panel-body"><img src="images/bose.jpg" class="img-responsive" style="width:100%" alt="bose"></div>
+        <div class="panel-footer text-center" >
+        <span id="price3">$ 5,999.00</span>
+        <button type="button" class="btn btn-info" id="3" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container" id="contenedor2">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary" >
+        <div class="panel-heading text-center">LENOVO -TABLET YOGA BOOK</div>
+        <div class="panel-body"><img src="images/lenovo.jpg" class="img-responsive" style="width:100%" alt="Lenovo"></div>
+        <div class="panel-footer text-center">
+        <span id="price4">$ 12,999.00</span>
+        <button type="button" class="btn btn-info" id="4" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">HISENSE -PANTALLA DE 50" -LED</div>
+        <div class="panel-body"><img src="images/hisense.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer text-center">
+        <span id="price5">$ 10,999.00</span>
+        <button type="button" class="btn btn-info" id="5" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">LG -LAVADORA CON ACCESO FRONTAL Y CAPACIDAD DE CARGA 20K</div>
+        <div class="panel-body"><img src="images/lglavadora.jpg" class="img-responsive" style="width:80%; padding-left:20%"   alt="Image"></div>
+        <div class="panel-footer text-center" >
+        <span id="price6">$ 21,000.00</span>
+        <button type="button" class="btn btn-info" id="6" onclick="carrito(this.id)"> <span class="glyphicon glyphicon-shopping-cart"></span> Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/carrito.js"></script>
+</body>
+</html>
